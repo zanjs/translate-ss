@@ -11,7 +11,6 @@ const translateText = async(ctx, next) => {
 
   text = trim(text)
 
-
   if (isLangJP(text)) {
     from = 'ja'
   }
@@ -22,8 +21,6 @@ const translateText = async(ctx, next) => {
 
   ctx.body = val
 }
-
-
 
 module.exports = {
   translateText
